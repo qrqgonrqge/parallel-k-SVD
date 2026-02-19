@@ -1,0 +1,3 @@
+[submodule "KSVD.jl"]
+	path = KSVD.jl
+	url = https://github.com/RomeoV/KSVD.jl.git
