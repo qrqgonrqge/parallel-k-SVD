@@ -1,0 +1,7 @@
+# Upgrade pip
+
+# Install scientific computing packages
+numpy
+scipy
+matplotlib
+scikit-learn
