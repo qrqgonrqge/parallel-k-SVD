@@ -5,3 +5,8 @@ numpy
 scipy
 matplotlib
 scikit-learn
+
+# Install profiling tools
+snakeviz
+line_profiler
+memory_profiler
