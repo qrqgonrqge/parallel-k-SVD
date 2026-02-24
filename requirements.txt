@@ -6,3 +6,8 @@ scipy
 matplotlib
 scikit-learn
 torch
+
+# Install profiling tools
+snakeviz
+line_profiler
+memory_profiler

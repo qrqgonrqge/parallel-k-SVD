@@ -3,3 +3,6 @@
 
 # virtualenvs
 serial_base/
+
+# Python cache files
+__pycache__/
