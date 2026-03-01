@@ -8,7 +8,7 @@ from sklearn.decomposition import SparseCoder, sparse_encode
 from sklearn.linear_model import orthogonal_mp_gram
 
 
-def kSVD_improved(Y, T_0, k, num_iter, track_loss = True, verbose:int = 0, rng=42):
+def kSVD(Y, T_0, k, num_iter, track_loss = True, verbose:int = 0, rng=42):
     loss = np.empty(num_iter)
     rng = np.random.default_rng(rng)
 
@@ -43,7 +43,8 @@ def kSVD_improved(Y, T_0, k, num_iter, track_loss = True, verbose:int = 0, rng=4
         XD = X @ D
         for i in range(k):
             x_i = X[:, i]
-            filter = (x_i != 0)
+            # filter = (x_i != 0)
+            filter = np.flatnonzero(x_i) 
             x_i_R = x_i[filter]
             if x_i_R.shape[0] == 0:
                 unused_atom=True
