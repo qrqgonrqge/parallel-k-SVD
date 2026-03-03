@@ -8,7 +8,7 @@ from sklearn.decomposition import SparseCoder, sparse_encode
 from sklearn.linear_model import orthogonal_mp_gram
 
 
-def OMP(Y, T_0, D, batch_size = 2, rng=42, debug=False):
+def OMP(Y, T_0, D, batch_size = 1, rng=42, debug=False):
     # loss = np.empty(num_iter)
     # rng = np.random.default_rng(rng)
 
@@ -130,7 +130,7 @@ def OMP(Y, T_0, D, batch_size = 2, rng=42, debug=False):
     return X
 
 
-def kSVD_improved(Y, T_0, k, num_iter, batch_size = 1, track_loss = True, verbose:int = 0, rng=42):
+def kSVD(Y, T_0, k, num_iter, batch_size = 1, track_loss = True, verbose:int = 0, rng=42):
     loss = np.empty(num_iter)
     rng = np.random.default_rng(rng)
 
