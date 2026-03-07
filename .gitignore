@@ -6,3 +6,6 @@ serial_base/
 
 # Python cache files
 __pycache__/
+
+# files that don't need to be on the repo
+local/
