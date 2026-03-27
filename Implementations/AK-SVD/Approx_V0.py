@@ -7,7 +7,7 @@ from time import time
 from sklearn.decomposition import SparseCoder, sparse_encode
 from sklearn.linear_model import orthogonal_mp_gram
 
-
+# Based on Serial_V3.py
 def OMP(Y, T_0, D, batch_size = 2, rng=42, debug=False):
     # loss = np.empty(num_iter)
     # rng = np.random.default_rng(rng)
