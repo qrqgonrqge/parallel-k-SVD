@@ -1,0 +1,3 @@
+From Approx_V1 onwards, batch size has been increased from 256 to 512 for the results saved in the notebooks!
+- Runtimes become slightly faster!
+- Probably the result of switching from FP64 to FP32?
