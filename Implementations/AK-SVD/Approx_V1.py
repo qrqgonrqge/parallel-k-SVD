@@ -220,7 +220,11 @@ def kSVD(Y, T_0, k, num_iter,
             print(f'Iteration {iter}:')
             t0 = time()
         
-        X = OMP(Y, T_0, D, batch_size = batch_size, rng=rng, debug=(verbose > 0))
+        X = OMP(Y, T_0, D, 
+                batch_size = batch_size, 
+                rng=rng, 
+                debug=(verbose > 0), 
+                float_dtype=dtype)
         if verbose > 0:
             print(f'\tCoding Time: {time() - t0}')
         

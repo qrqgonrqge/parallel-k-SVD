@@ -229,7 +229,11 @@ def kSVD(Y, T_0, k, num_iter,
         #     copy_Gram=False, 
         #     copy_Xy=False
         # ).T # Transpose to match X shape
-        X = OMP(Y, T_0, D, batch_size = batch_size, rng=rng, debug=(verbose > 0))
+        X = OMP(Y, T_0, D, 
+                batch_size = batch_size, 
+                rng=rng, 
+                debug=(verbose > 0), 
+                float_dtype=dtype)
         # X = np.asfortranarray(X)
         if verbose > 0:
             print(f'\tCoding Time: {time() - t0}')
