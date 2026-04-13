@@ -263,14 +263,14 @@ def kSVD(Y, T_0, k, num_iter,
                 atom_error = np.sum(E_k_R ** 2, axis=1, dtype=dtype)
                 atom_idx = np.argmax(atom_error)
 
-                D_k_new = Y[atom_idx]
-                D_k_new /= np.linalg.norm(D_k_new)
-                D[k] = D_k_new
+                D_i_new = Y[atom_idx]
+                D_i_new /= np.linalg.norm(D_i_new)
+                D[i] = D_i_new
 
-                X[atom_idx, k] = 1
+                X[atom_idx, i] = 1
                 E_k_R[atom_idx] = 0
                 if verbose > 0:
-                    print(f'Replaced dict atom {k} with data point {atom_idx}')
+                    print(f'Replaced dict atom {i} with data point {atom_idx}')
                 continue
             
             # res = X[filter, i][:, np.newaxis] * D[i]
