@@ -396,7 +396,7 @@ def dict_update(X_filter_i, E_k_R_filter, D, i, X, filter):
 
 
 @njit
-def kSVD_inner(k, filter_bool, unused_atom, E_k_R, Y, D, X, verbose):
+def kSVD_inner(k, filter_bool, unused_atom, E_k_R, dtype, Y, D, X, verbose):
     for i in range(k):
         filter_bool_i = filter_bool[:, i]
         
@@ -458,7 +458,7 @@ def kSVD_outer(num_iter, verbose,
         E_k_R = Y - X @ D
         # E_k_R = np.subtract(Y, X @ D, dtype=dtype)
         
-        unused_atom = kSVD_inner(k, filter_bool, unused_atom, E_k_R, Y, D, X, verbose)
+        unused_atom = kSVD_inner(k, filter_bool, unused_atom, E_k_R, dtype, Y, D, X, verbose)
 
         if verbose > 0:
             # print(f'\tUpdate Time: {time() - t0}')
