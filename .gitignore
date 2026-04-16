@@ -15,3 +15,6 @@ viztracer_report.json
 
 # Benchmarking csv files
 Experiments/Benchmarking/*.csv
+
+# Scalability csv files
+Experiments/Scalability Analysis/
