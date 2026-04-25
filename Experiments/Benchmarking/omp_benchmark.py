@@ -20,6 +20,7 @@ from Experiments.Numba.OMP_Implementations.OMP_numba_parallel import (
     OMP_numba_njit,
     OMP_numba_njit_parallel,
     OMP_numba_njit_parallel_pbatches,
+    OMP_numba_njit_parallel_optimized
 )
 
 # -----------------------------
@@ -45,12 +46,14 @@ T_0 = 1
 N = 10  # timeit runs
 
 functions = [
-    ("OMP_serial", OMP_serial),
-    ("OMP_numba_serial", OMP_numba_serial),
-    ("OMP_numba_jit", OMP_numba_jit),
-    ("OMP_numba_njit", OMP_numba_njit),
+    # ("OMP_serial", OMP_serial),
+    # ("OMP_numba_serial", OMP_numba_serial),
+    # ("OMP_numba_jit", OMP_numba_jit),
+    # ("OMP_numba_njit", OMP_numba_njit),
     # ("OMP_numba_njit_parallel", OMP_numba_njit_parallel),
-    ("OMP_numba_njit_parallel_pbatches", OMP_numba_njit_parallel_pbatches),
+    # ("OMP_numba_njit_parallel_pbatches", OMP_numba_njit_parallel_pbatches),
+    ("OMP_numba_njit_parallel_optimized", OMP_numba_njit_parallel_optimized),
+
 ]
 
 max_threads = numba.get_num_threads()
@@ -104,7 +107,7 @@ for name, fn in functions:
 # -----------------------------
 # SAVE CSV
 # -----------------------------
-with open("omp_benchmark_all.csv", "w", newline="") as f:
+with open("omp_benchmark_all.csv", "a", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["function", "threads", "batch_size", "time_sec"])
     writer.writerows(results)
