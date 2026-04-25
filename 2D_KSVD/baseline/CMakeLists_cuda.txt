@@ -1,0 +1,37 @@
+cmake_minimum_required(VERSION 3.10)
+project(2d_ksvd_cuda)
+
+# Enable CUDA
+enable_language(CUDA)
+set(CMAKE_CUDA_STANDARD 14)
+set(CMAKE_CUDA_STANDARD_REQUIRED ON)
+
+# Find CUDA toolkit
+find_package(CUDA REQUIRED)
+
+# Find CUBLAS and CUSOLVER
+find_package(CUBLAS REQUIRED)
+find_package(CUSOLVER REQUIRED)
+
+# Create CUDA executable
+add_executable(2d_baseline_cuda 2d_baseline_cuda.cu)
+
+# Link CUDA libraries
+target_link_libraries(2d_baseline_cuda 
+    ${CUDA_LIBRARIES}
+    ${CUBLAS_LIBRARIES}
+    ${CUSOLVER_LIBRARIES}
+    cuda_runtime
+)
+
+# Include directories
+target_include_directories(2d_baseline_cuda PRIVATE 
+    ${CUDA_INCLUDE_DIRS}
+    ${CUBLAS_INCLUDE_DIRS}
+    ${CUSOLVER_INCLUDE_DIRS}
+)
+
+# Set CUDA compilation flags
+set_target_properties(2d_baseline_cuda PROPERTIES
+    CUDA_SEPARABLE_COMPILATION ON
+)

@@ -1,0 +1,3 @@
+/home/ray/github/parallel-k-SVD/2D_KSVD/baseline/build/CMakeFiles/2d_baseline.dir
+/home/ray/github/parallel-k-SVD/2D_KSVD/baseline/build/CMakeFiles/edit_cache.dir
+/home/ray/github/parallel-k-SVD/2D_KSVD/baseline/build/CMakeFiles/rebuild_cache.dir
