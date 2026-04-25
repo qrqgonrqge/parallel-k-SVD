@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ray/github/parallel-k-SVD/2D_KSVD/baseline/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,3 @@
+/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/build/CMakeFiles/main.dir
+/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/build/CMakeFiles/edit_cache.dir
+/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/build/CMakeFiles/rebuild_cache.dir

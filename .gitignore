@@ -9,3 +9,12 @@ __pycache__/
 
 # files that don't need to be on the repo
 local/
+
+# viztracer reports
+viztracer_report.json
+
+# Benchmarking csv files
+Experiments/Benchmarking/*.csv
+
+# Scalability csv files
+Experiments/Scalability Analysis/**/*.csv
