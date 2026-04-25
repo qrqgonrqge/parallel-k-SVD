@@ -18,3 +18,8 @@ Experiments/Benchmarking/*.csv
 
 # Scalability csv files
 Experiments/Scalability Analysis/**/*.csv
+
+# c++ caches
+**/.cache/
+*.d
+*.o

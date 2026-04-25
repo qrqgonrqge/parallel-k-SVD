@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/distorter.cpp.o: \
- /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/distorter.cpp \
+ /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/distorter.cpp \
  /usr/include/stdc-predef.h \
- /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/distorter.hpp \
+ /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/distorter.hpp \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/Version \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \

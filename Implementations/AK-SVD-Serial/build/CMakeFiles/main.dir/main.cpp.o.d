@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/main.cpp.o: \
- /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/main.cpp \
+ /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/15.2.1/cstdio \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -566,11 +566,11 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/image_process.hpp \
- /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/distorter.hpp \
- /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/ksvd.hpp \
+ /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/image_process.hpp \
+ /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/distorter.hpp \
+ /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/ksvd.hpp \
  /usr/include/eigen3/Eigen/SVD \
- /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/omp.hpp \
+ /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/omp.hpp \
  /usr/include/c++/15.2.1/iostream /usr/include/c++/15.2.1/random \
  /usr/include/c++/15.2.1/bits/random.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/opt_random.h \

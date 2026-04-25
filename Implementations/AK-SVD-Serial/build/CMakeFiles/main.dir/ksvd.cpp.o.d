@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/ksvd.cpp.o: \
- /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/ksvd.cpp \
+ /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/ksvd.cpp \
  /usr/include/stdc-predef.h \
- /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/ksvd.hpp \
+ /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/ksvd.hpp \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/Version \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -565,7 +565,7 @@ CMakeFiles/main.dir/ksvd.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
  /usr/include/eigen3/Eigen/SVD \
- /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/omp.hpp \
+ /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/omp.hpp \
  /usr/include/c++/15.2.1/iostream /usr/include/c++/15.2.1/random \
  /usr/include/c++/15.2.1/bits/random.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/opt_random.h \

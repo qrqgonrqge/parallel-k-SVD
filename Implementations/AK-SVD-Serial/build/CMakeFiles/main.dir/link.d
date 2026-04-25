@@ -73,9 +73,10 @@ main: \
   /usr/lib/libGLdispatch.so.0 \
   /usr/lib32/libGLX.so.0 \
   /usr/lib/libGLX.so.0 \
-  /usr/lib/libblas.so.3 \
   /usr/lib32/libgfortran.so.5 \
   /usr/lib/libgfortran.so.5 \
+  /usr/lib32/libgomp.so.1 \
+  /usr/lib/libgomp.so.1 \
   /usr/lib32/libbrotlicommon.so.1 \
   /usr/lib/libbrotlicommon.so.1 \
   /usr/lib/libopenjph.so.0.26 \
@@ -236,11 +237,13 @@ CMakeFiles/main.dir/image_process.cpp.o:
 
 /usr/lib/libGLX.so.0:
 
-/usr/lib/libblas.so.3:
-
 /usr/lib32/libgfortran.so.5:
 
 /usr/lib/libgfortran.so.5:
+
+/usr/lib32/libgomp.so.1:
+
+/usr/lib/libgomp.so.1:
 
 /usr/lib32/libbrotlicommon.so.1:
 

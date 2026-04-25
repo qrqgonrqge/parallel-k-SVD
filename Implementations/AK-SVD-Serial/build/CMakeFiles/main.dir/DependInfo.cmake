@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/distorter.cpp" "CMakeFiles/main.dir/distorter.cpp.o" "gcc" "CMakeFiles/main.dir/distorter.cpp.o.d"
-  "/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/image_process.cpp" "CMakeFiles/main.dir/image_process.cpp.o" "gcc" "CMakeFiles/main.dir/image_process.cpp.o.d"
-  "/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/ksvd.cpp" "CMakeFiles/main.dir/ksvd.cpp.o" "gcc" "CMakeFiles/main.dir/ksvd.cpp.o.d"
-  "/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
-  "/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/omp.cpp" "CMakeFiles/main.dir/omp.cpp.o" "gcc" "CMakeFiles/main.dir/omp.cpp.o.d"
+  "/home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/distorter.cpp" "CMakeFiles/main.dir/distorter.cpp.o" "gcc" "CMakeFiles/main.dir/distorter.cpp.o.d"
+  "/home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/image_process.cpp" "CMakeFiles/main.dir/image_process.cpp.o" "gcc" "CMakeFiles/main.dir/image_process.cpp.o.d"
+  "/home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/ksvd.cpp" "CMakeFiles/main.dir/ksvd.cpp.o" "gcc" "CMakeFiles/main.dir/ksvd.cpp.o.d"
+  "/home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
+  "/home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/omp.cpp" "CMakeFiles/main.dir/omp.cpp.o" "gcc" "CMakeFiles/main.dir/omp.cpp.o.d"
   "" "main" "gcc" "CMakeFiles/main.dir/link.d"
   )
 

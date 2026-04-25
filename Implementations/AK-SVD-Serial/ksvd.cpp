@@ -38,6 +38,9 @@ void KSVD::fit(const Eigen::MatrixXd& Y) {
             for (int k = 0; k < K_; k++)
                 if (X(m, k) != 0.0) atom_signals[k].push_back(m);
 
+        // Pre-allocate E_f at max size — reused each atom, avoids K_ mallocs.
+        Eigen::MatrixXd E_f(M, N);
+
         for (int i = 0; i < K_; i++) {
             const auto& filter = atom_signals[i];
             if (filter.empty()) continue;
@@ -47,14 +50,13 @@ void KSVD::fit(const Eigen::MatrixXd& Y) {
             for (int j = 0; j < sz; j++)
                 E.row(filter[j]) += X(filter[j], i) * D.col(i).transpose();
 
-            // Gather restricted error matrix (sz × N)
-            Eigen::MatrixXd E_f(sz, N);
+            // Gather restricted error matrix into the top sz rows of E_f
             for (int j = 0; j < sz; j++) E_f.row(j) = E.row(filter[j]);
 
             // One power-iteration step from the current atom (AK-SVD).
             // O(4·sz·N) vs O(sz·N²) for full SVD — ~12× cheaper per atom.
-            Eigen::VectorXd d = (E_f.transpose() * (E_f * D.col(i))).normalized();
-            Eigen::VectorXd x_new = E_f * d;
+            Eigen::VectorXd d = (E_f.topRows(sz).transpose() * (E_f.topRows(sz) * D.col(i))).normalized();
+            Eigen::VectorXd x_new = E_f.topRows(sz) * d;
 
             D.col(i) = d;
             for (int j = 0; j < sz; j++)

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(ksvd_serial_v4)
+project(aksvd_serial)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)

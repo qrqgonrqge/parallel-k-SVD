@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/image_process.cpp.o: \
- /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/image_process.cpp \
+ /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/image_process.cpp \
  /usr/include/stdc-predef.h /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -708,4 +708,4 @@ CMakeFiles/main.dir/image_process.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/image_process.hpp
+ /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/image_process.hpp

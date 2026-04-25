@@ -26,7 +26,7 @@ int main() {
 
     // ---- Hyperparams ----
     const int K          = 300;
-    const int T0         = 5;
+    const int T0         = 20;
     const int num_iter   = 2;
     const int batch_size = 256;
     const int n_runs     = 10;
@@ -47,8 +47,8 @@ int main() {
             std::chrono::high_resolution_clock::now() - t0).count();
 
         final_loss = ksvd.loss(num_iter - 1);
-        printf("  run %2d / %d : %.4f s  (loss %.4f)\n",
-               run + 1, n_runs, times[run], final_loss);
+        // printf("  run %2d / %d : %.4f s  (loss %.4f)\n",
+        //        run + 1, n_runs, times[run], final_loss);
     }
 
     // ---- Stats ----

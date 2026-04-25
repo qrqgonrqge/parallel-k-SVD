@@ -1,7 +1,6 @@
 #include "ksvd.hpp"
 #include <random>
 #include <vector>
-#include <omp.h>
 
 KSVD::KSVD(int K, int T0, int num_iter, int batch_size, unsigned int seed)
     : K_(K), T0_(T0), num_iter_(num_iter), batch_size_(batch_size), seed_(seed) {}
@@ -24,49 +23,43 @@ void KSVD::fit(const Eigen::MatrixXd& Y) {
     OMP omp(N, K_, T0_, Y, batch_size_);
 
     for (int iter = 0; iter < num_iter_; iter++) {
-        // ---- Sparse coding ----
+        // ---- Sparse coding (parallelised inside OMP::do_omp) ----
         omp.D = D;
         omp.do_omp();
         Eigen::MatrixXd X = omp.X;  // M × K
 
-        // ---- Dictionary update (parallel snapshot) ----
-        const Eigen::MatrixXd E_base = Y - X * D.transpose();  // M × N, read-only
+        // ---- Dictionary update (sequential — matches serial AK-SVD) ----
+        Eigen::MatrixXd E = Y - X * D.transpose();  // M × N
 
         std::vector<std::vector<int>> atom_signals(K_);
         for (int m = 0; m < M; m++)
             for (int k = 0; k < K_; k++)
                 if (X(m, k) != 0.0) atom_signals[k].push_back(m);
 
-        std::vector<Eigen::VectorXd> new_d(K_);
-        std::vector<Eigen::VectorXd> new_x(K_);
+        Eigen::MatrixXd E_f(M, N);
 
-        #pragma omp parallel for schedule(dynamic)
         for (int i = 0; i < K_; i++) {
             const auto& filter = atom_signals[i];
             if (filter.empty()) continue;
             const int sz = static_cast<int>(filter.size());
 
-            // E_f = E_base rows + atom i's contribution added back (thread-local)
-            Eigen::MatrixXd E_f(sz, N);
             for (int j = 0; j < sz; j++)
-                E_f.row(j) = E_base.row(filter[j])
-                             + X(filter[j], i) * D.col(i).transpose();
+                E.row(filter[j]) += X(filter[j], i) * D.col(i).transpose();
 
-            // One power-iteration step (AK-SVD) — O(4·sz·N) per atom
-            new_d[i] = (E_f.transpose() * (E_f * D.col(i))).normalized();
-            new_x[i] = E_f * new_d[i];
+            for (int j = 0; j < sz; j++) E_f.row(j) = E.row(filter[j]);
+
+            Eigen::VectorXd d = (E_f.topRows(sz).transpose() * (E_f.topRows(sz) * D.col(i))).normalized();
+            Eigen::VectorXd x_new = E_f.topRows(sz) * d;
+
+            D.col(i) = d;
+            for (int j = 0; j < sz; j++)
+                X(filter[j], i) = x_new(j);
+
+            for (int j = 0; j < sz; j++)
+                E.row(filter[j]) -= X(filter[j], i) * D.col(i).transpose();
         }
 
-        // Apply all updates serially
-        for (int i = 0; i < K_; i++) {
-            if (atom_signals[i].empty()) continue;
-            D.col(i) = new_d[i];
-            const auto& filter = atom_signals[i];
-            for (int j = 0; j < static_cast<int>(filter.size()); j++)
-                X(filter[j], i) = new_x[i](j);
-        }
-
-        loss(iter) = (Y - X * D.transpose()).norm();
-        printf("  iter %d / %d : loss = %.4f\n", iter + 1, num_iter_, loss(iter));
+        loss(iter) = E.norm();
+        // printf("  iter %d / %d : loss = %.4f\n", iter + 1, num_iter_, loss(iter));
     }
 }
