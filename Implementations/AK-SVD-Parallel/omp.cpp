@@ -2,7 +2,7 @@
 #include <cstdio>
 #include <omp.h>
 
-OMP::OMP(int N, int K, int T0, Eigen::MatrixXd Y, int batch_size) {
+OMP::OMP(int N, int K, int T0, Eigen::MatrixXf Y, int batch_size) {
     this->params.N          = N;
     this->params.K          = K;
     this->params.t0         = T0;
@@ -17,10 +17,10 @@ bool OMP::do_omp() {
     const int T0 = this->params.t0;
     const int bs = this->params.batch_size;
 
-    Eigen::MatrixXd X = Eigen::MatrixXd::Zero(M, K);
+    Eigen::MatrixXf X = Eigen::MatrixXf::Zero(M, K);
 
     // D is N×K; precompute per-atom norms
-    Eigen::VectorXd D_norm(K);
+    Eigen::VectorXf D_norm(K);
     for (int k = 0; k < K; k++) D_norm(k) = this->D.col(k).norm();
 
     #pragma omp parallel for schedule(dynamic)
@@ -28,16 +28,16 @@ bool OMP::do_omp() {
         const int cur = std::min(bs, M - b_start);
 
         // y_batch stays fixed; r_batch is the evolving residual
-        Eigen::MatrixXd y_batch = this->Y.middleRows(b_start, cur);  // cur × N
-        Eigen::MatrixXd r_batch = y_batch;
+        Eigen::MatrixXf y_batch = this->Y.middleRows(b_start, cur);  // cur × N
+        Eigen::MatrixXf r_batch = y_batch;
 
         // Per-signal Gram-Schmidt state (vector of matrices avoids 3-D indexing)
-        std::vector<Eigen::MatrixXd> Q_vec(cur, Eigen::MatrixXd::Zero(N, T0));
-        std::vector<Eigen::MatrixXd> R_vec(cur, Eigen::MatrixXd::Zero(T0, T0));
-        Eigen::MatrixXd Q_T_y  = Eigen::MatrixXd::Zero(cur, T0);  // cur × T0
+        std::vector<Eigen::MatrixXf> Q_vec(cur, Eigen::MatrixXf::Zero(N, T0));
+        std::vector<Eigen::MatrixXf> R_vec(cur, Eigen::MatrixXf::Zero(T0, T0));
+        Eigen::MatrixXf Q_T_y  = Eigen::MatrixXf::Zero(cur, T0);  // cur × T0
         Eigen::MatrixXi I_batch = Eigen::MatrixXi::Zero(cur, T0); // selected atoms
 
-        Eigen::MatrixXd atom_mask = Eigen::MatrixXd::Ones(cur, K);
+        Eigen::MatrixXf atom_mask = Eigen::MatrixXf::Ones(cur, K);
 
         // j_stops[i] = first iteration where signal i became linearly dependent
         // (initialised to T0 = ran all the way through)
@@ -48,7 +48,7 @@ bool OMP::do_omp() {
         for (int j = 0; j < T0; j++) {
             // ---- Batched atom selection -----------------------------------------------
             // (cur×N) × (N×K) → (cur×K), masked and abs'd
-            Eigen::MatrixXd D_r =
+            Eigen::MatrixXf D_r =
                 (r_batch * this->D).cwiseProduct(atom_mask).cwiseAbs();
 
             // Argmax per row → one selected atom index per signal
@@ -60,7 +60,7 @@ bool OMP::do_omp() {
             }
 
             // Gather selected atoms into D_k_batch (cur × N) and update mask/I
-            Eigen::MatrixXd D_k_batch(cur, N);
+            Eigen::MatrixXf D_k_batch(cur, N);
             for (int i = 0; i < cur; i++) {
                 atom_mask(i, k_vec[i]) = 0.0;
                 I_batch(i, j) = k_vec[i];
@@ -78,14 +78,14 @@ bool OMP::do_omp() {
                 for (int i = 0; i < cur; i++) {
                     if (dead[i]) continue;
 
-                    Eigen::VectorXd D_ki = D_k_batch.row(i).transpose();
-                    Eigen::VectorXd dot  = Q_vec[i].leftCols(j).transpose() * D_ki;
+                    Eigen::VectorXf D_ki = D_k_batch.row(i).transpose();
+                    Eigen::VectorXf dot  = Q_vec[i].leftCols(j).transpose() * D_ki;
                     R_vec[i].col(j).head(j) = dot;
 
-                    Eigen::VectorXd q_j      = D_ki - Q_vec[i].leftCols(j) * dot;
+                    Eigen::VectorXf q_j      = D_ki - Q_vec[i].leftCols(j) * dot;
                     double          q_j_norm = q_j.norm();
 
-                    if (q_j_norm < 1e-15) {
+                    if (q_j_norm < 1e-7f) {
                         dead[i]         = true;
                         j_stops[i]      = j;
                         atom_mask(i, k_vec[i]) = 1.0;  // restore so mask stays valid
@@ -100,12 +100,12 @@ bool OMP::do_omp() {
             // Build Q_j_batch (cur × N): column j of each signal's Q
             // Dead signals have Q_vec[i].col(j) == 0 (from Zero init), so they
             // contribute zero to the projection and their residual is unchanged.
-            Eigen::MatrixXd Q_j_batch(cur, N);
+            Eigen::MatrixXf Q_j_batch(cur, N);
             for (int i = 0; i < cur; i++)
                 Q_j_batch.row(i) = Q_vec[i].col(j).transpose();
 
             // y_proj[i] = y_batch.row(i) · Q_j_batch.row(i)
-            Eigen::VectorXd y_proj =
+            Eigen::VectorXf y_proj =
                 (y_batch.cwiseProduct(Q_j_batch)).rowwise().sum();  // cur × 1
 
             Q_T_y.col(j) = y_proj;
@@ -119,8 +119,8 @@ bool OMP::do_omp() {
             const int js = j_stops[i];
             if (js == 0) continue;
 
-            Eigen::VectorXd rhs   = Q_T_y.row(i).head(js).transpose();
-            Eigen::VectorXd gamma = R_vec[i].topLeftCorner(js, js)
+            Eigen::VectorXf rhs   = Q_T_y.row(i).head(js).transpose();
+            Eigen::VectorXf gamma = R_vec[i].topLeftCorner(js, js)
                                             .triangularView<Eigen::Upper>()
                                             .solve(rhs);
 

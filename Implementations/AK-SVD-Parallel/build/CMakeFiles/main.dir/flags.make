@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -isystem /usr/include/opencv4 -isystem /usr/include/eigen3
 
-CXX_FLAGS = -std=gnu++17 -O3 -march=native -DNDEBUG -fopenmp
+CXX_FLAGS = -O3 -march=native -DNDEBUG -O3 -DNDEBUG -std=gnu++17 -O3 -march=native -DNDEBUG -fopenmp
 

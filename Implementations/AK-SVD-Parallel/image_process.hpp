@@ -3,12 +3,12 @@
 
 class ImageProcess {
 public:
-    Eigen::MatrixXd loadGrayscaleEigenImage(
+    Eigen::MatrixXf loadGrayscaleEigenImage(
         const std::string& image_path,
         int target_width = -1,
         int target_height = -1,
         bool normalize = true
     );
     
-    void saveEigenGrayImage(const Eigen::MatrixXd& img, const std::string& filename);
+    void saveEigenGrayImage(const Eigen::MatrixXf& img, const std::string& filename);
 };

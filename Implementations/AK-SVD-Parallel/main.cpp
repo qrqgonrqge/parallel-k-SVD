@@ -11,7 +11,7 @@
 int main() {
     // ---- Load image ----
     ImageProcess image_process;
-    Eigen::MatrixXd image = image_process.loadGrayscaleEigenImage(
+    Eigen::MatrixXf image = image_process.loadGrayscaleEigenImage(
         "../images/racoon.jpeg", 256, 192, true);
     printf("Loaded image: %d rows × %d cols\n", (int)image.rows(), (int)image.cols());
 
@@ -20,7 +20,7 @@ int main() {
 
     // ---- Extract patches from left half, normalize ----
     const int patch_size = 7;
-    Eigen::MatrixXd Y = distorter.extractNormalizedPatches(patch_size);
+    Eigen::MatrixXf Y = distorter.extractNormalizedPatches(patch_size);
     printf("Extracted %d patches (%d features)\n\n",
            (int)Y.rows(), (int)Y.cols());
 

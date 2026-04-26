@@ -79,7 +79,7 @@ main: \
   /usr/lib/libgfortran.so.5 \
   /usr/lib32/libbrotlicommon.so.1 \
   /usr/lib/libbrotlicommon.so.1 \
-  /usr/lib/libopenjph.so.0.26 \
+  /usr/lib/libopenjph.so.0.27 \
   /usr/lib32/libX11.so.6 \
   /usr/lib/libX11.so.6 \
   /usr/lib32/libxcb.so.1 \
@@ -249,7 +249,7 @@ CMakeFiles/main.dir/image_process.cpp.o:
 
 /usr/lib/libbrotlicommon.so.1:
 
-/usr/lib/libopenjph.so.0.26:
+/usr/lib/libopenjph.so.0.27:
 
 /usr/lib32/libX11.so.6:
 

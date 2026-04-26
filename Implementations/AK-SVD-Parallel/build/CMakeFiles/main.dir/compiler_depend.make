@@ -3408,7 +3408,7 @@ main: /usr/lib/Scrt1.o \
   /usr/lib/libopencv_imgcodecs.so.4.13.0 \
   /usr/lib/libopencv_imgproc.so.4.13.0 \
   /usr/lib/libopenjp2.so.7 \
-  /usr/lib/libopenjph.so.0.26 \
+  /usr/lib/libopenjph.so.0.27 \
   /usr/lib/libpng16.so.16 \
   /usr/lib/libpthread.a \
   /usr/lib/libsharpyuv.so.0 \
@@ -3542,6 +3542,8 @@ CMakeFiles/main.dir/distorter.cpp.o:
 /usr/include/opencv4/opencv2/imgproc.hpp:
 
 /usr/include/opencv4/opencv2/flann/timer.h:
+
+/usr/lib/libopenjph.so.0.27:
 
 /usr/include/opencv4/opencv2/flann/saving.h:
 
@@ -4180,8 +4182,6 @@ CMakeFiles/main.dir/distorter.cpp.o:
 /usr/include/bits/waitstatus.h:
 
 /usr/include/bits/select.h:
-
-/usr/lib/libopenjph.so.0.26:
 
 /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
 

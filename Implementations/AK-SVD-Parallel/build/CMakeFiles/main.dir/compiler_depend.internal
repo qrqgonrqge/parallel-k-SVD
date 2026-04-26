@@ -3414,7 +3414,7 @@ main
  /usr/lib/libopencv_imgcodecs.so.4.13.0
  /usr/lib/libopencv_imgproc.so.4.13.0
  /usr/lib/libopenjp2.so.7
- /usr/lib/libopenjph.so.0.26
+ /usr/lib/libopenjph.so.0.27
  /usr/lib/libpng16.so.16
  /usr/lib/libpthread.a
  /usr/lib/libsharpyuv.so.0
