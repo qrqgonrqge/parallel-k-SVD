@@ -24,3 +24,5 @@ Experiments/Scalability Analysis/**/*.csv
 *.d
 *.o
 *.d.o
+Implementations/AK-SVD-Parallel/build/vgcore.181157
+build/
