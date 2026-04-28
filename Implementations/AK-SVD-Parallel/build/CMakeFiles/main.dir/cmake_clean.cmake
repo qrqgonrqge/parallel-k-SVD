@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/main.cpp.o.d"
   "CMakeFiles/main.dir/omp.cpp.o"
   "CMakeFiles/main.dir/omp.cpp.o.d"
+  "CMakeFiles/main.dir/synth.cpp.o"
+  "CMakeFiles/main.dir/synth.cpp.o.d"
   "main"
   "main.pdb"
 )

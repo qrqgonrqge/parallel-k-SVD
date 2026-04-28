@@ -7,6 +7,7 @@ main: \
   CMakeFiles/main.dir/ksvd.cpp.o \
   CMakeFiles/main.dir/distorter.cpp.o \
   CMakeFiles/main.dir/image_process.cpp.o \
+  CMakeFiles/main.dir/synth.cpp.o \
   /usr/lib/libopencv_imgcodecs.so.4.13.0 \
   /usr/lib/libopencv_imgproc.so.4.13.0 \
   /usr/lib/libopencv_core.so.4.13.0 \
@@ -104,6 +105,8 @@ CMakeFiles/main.dir/ksvd.cpp.o:
 CMakeFiles/main.dir/distorter.cpp.o:
 
 CMakeFiles/main.dir/image_process.cpp.o:
+
+CMakeFiles/main.dir/synth.cpp.o:
 
 /usr/lib/libopencv_imgcodecs.so.4.13.0:
 

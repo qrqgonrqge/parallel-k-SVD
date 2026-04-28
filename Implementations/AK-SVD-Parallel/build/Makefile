@@ -249,6 +249,30 @@ omp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/omp.cpp.s
 .PHONY : omp.cpp.s
 
+synth.o: synth.cpp.o
+.PHONY : synth.o
+
+# target to build an object file
+synth.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/synth.cpp.o
+.PHONY : synth.cpp.o
+
+synth.i: synth.cpp.i
+.PHONY : synth.i
+
+# target to preprocess a source file
+synth.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/synth.cpp.i
+.PHONY : synth.cpp.i
+
+synth.s: synth.cpp.s
+.PHONY : synth.s
+
+# target to generate assembly for a file
+synth.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/synth.cpp.s
+.PHONY : synth.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -273,6 +297,9 @@ help:
 	@echo "... omp.o"
 	@echo "... omp.i"
 	@echo "... omp.s"
+	@echo "... synth.o"
+	@echo "... synth.i"
+	@echo "... synth.s"
 .PHONY : help
 
 

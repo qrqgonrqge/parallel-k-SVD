@@ -8,39 +8,35 @@
 #include "image_process.hpp"
 #include "distorter.hpp"
 #include "ksvd.hpp"
-
+#include "synth.hpp"
+#include <omp.h>
 int main(int argc, char* argv[]) {
-    if (argc != 1 && argc != 5) {
-        fprintf(stderr, "Usage: %s [K T0 batch_size num_iter]\n", argv[0]);
-        return 1;
-    }
-
-    int K = 300;
-    int T0 = 20;
+    int K          = 300;
+    int T0         = 20;
     int batch_size = 256;
-    int num_iter = 2;
+    int num_iter   = 2;
+    printf("Threads: %d\n", omp_get_max_threads());
 
-    if (argc == 5) {
-        K = std::stoi(argv[1]);
-        T0 = std::stoi(argv[2]);
-        batch_size = std::stoi(argv[3]);
-        num_iter = std::stoi(argv[4]);
+    Eigen::MatrixXf Y;
+
+    // --synth M [N]  →  synthetic data
+    if (argc >= 3 && std::string(argv[1]) == "--synth") {
+        int M = std::stoi(argv[2]);
+        int N = (argc >= 4) ? std::stoi(argv[3]) : 49;
+        printf("Synthetic: M=%d  N=%d\n\n", M, N);
+        Y = SynthData::generate(M, N);
+    } else {
+        // ---- Load image ----
+        ImageProcess image_process;
+        Eigen::MatrixXf image = image_process.loadGrayscaleEigenImage(
+            "../images/racoon.jpeg", 256, 192, true);
+        printf("Loaded image: %d rows × %d cols\n", (int)image.rows(), (int)image.cols());
+        Distorter distorter(image, 0.075, 42);
+        const int patch_size = 7;
+        Y = distorter.extractNormalizedPatches(patch_size);
+        printf("Extracted %d patches (%d features)\n\n",
+               (int)Y.rows(), (int)Y.cols());
     }
-
-    // ---- Load image ----
-    ImageProcess image_process;
-    Eigen::MatrixXf image = image_process.loadGrayscaleEigenImage(
-        "../images/racoon.jpeg", 256, 192, true);
-    printf("Loaded image: %d rows × %d cols\n", (int)image.rows(), (int)image.cols());
-
-    // ---- Distort right half ----
-    Distorter distorter(image, 0.075, 42);
-
-    // ---- Extract patches from left half, normalize ----
-    const int patch_size = 7;
-    Eigen::MatrixXf Y = distorter.extractNormalizedPatches(patch_size);
-    printf("Extracted %d patches (%d features)\n\n",
-           (int)Y.rows(), (int)Y.cols());
 
     // ---- Hyperparams ----
     const int n_runs     = 10;

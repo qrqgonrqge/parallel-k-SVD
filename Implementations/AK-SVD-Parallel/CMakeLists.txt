@@ -14,6 +14,7 @@ add_executable(main
     ksvd.cpp       ksvd.hpp
     distorter.cpp  distorter.hpp
     image_process.cpp image_process.hpp
+    synth.cpp      synth.hpp
 )
 
 target_link_libraries(main Eigen3::Eigen)
