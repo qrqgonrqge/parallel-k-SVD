@@ -34,3 +34,4 @@ if(TARGET Eigen3::Eigen)
 endif()
 
 target_compile_options(main PRIVATE -O3 -DNDEBUG)
+target_link_options(main PRIVATE -fstack-protector)
