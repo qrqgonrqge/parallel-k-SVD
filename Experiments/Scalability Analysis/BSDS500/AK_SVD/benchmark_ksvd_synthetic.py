@@ -1,3 +1,5 @@
+from email import parser
+
 import numba
 import numpy as np
 import time
@@ -33,7 +35,7 @@ def load_bsds500(path, num_images=10, patch_size=(8, 8)):
     Y -= np.mean(Y, axis=0)
     return Y
 
-def run_ksvd_benchmark(Y, T_0, k, num_iter, threads_list, batch_size=1):
+def run_ksvd_benchmark(Y, T_0, k, num_iter, threads_list, batch_size=1, weak=True):
     results = []
     output_dir = "ksvd_results"
     os.makedirs(output_dir, exist_ok=True)
@@ -41,15 +43,22 @@ def run_ksvd_benchmark(Y, T_0, k, num_iter, threads_list, batch_size=1):
     # warmup run (not timed)
     _ = kSVD(Y, T_0=T_0, k=k, num_iter=1, batch_size=batch_size, track_loss=False, verbose=0)
 
+    num_patches = Y.shape[0]
+    weak_scaling_range = [threads * (num_patches // max(threads_list)) for threads in threads_list]
+    print(f"Weak scaling patch counts per thread config: {weak_scaling_range}")
     for t in threads_list:
         set_num_threads(t)
         print(f"--- Running kSVD with {t} Threads ---")
         
+        if weak:
+            Y_crop = Y[:weak_scaling_range[threads_list.index(t)], :]
+        else:
+            Y_crop = Y
         start_time = time.perf_counter()
         # Using your specific kSVD signature
         # D_final, X_final (and potentially loss_history)
         D_out, X_out, loss = kSVD(
-            Y, T_0=T_0, k=k, num_iter=num_iter, 
+            Y_crop, T_0=T_0, k=k, num_iter=num_iter, 
             batch_size=batch_size, track_loss=True, verbose=0
         )
         end_time = time.perf_counter()
@@ -57,20 +66,23 @@ def run_ksvd_benchmark(Y, T_0, k, num_iter, threads_list, batch_size=1):
         duration = end_time - start_time
         
         # Final Reconstruction Loss
-        print(D_out.shape, X_out.shape)
+        # print(D_out.shape, X_out.shape)
         reconstruction = X_out @ D_out  # Shape: (n_samples, n_features)
-        final_loss = np.sqrt(np.mean((Y - reconstruction)**2))
+        final_loss = np.sqrt(np.mean((Y_crop - reconstruction)**2))
         
         results.append({
             "threads": t,
             "runtime": duration,
             "loss": final_loss,
-            "throughput": Y.shape[1] / duration # Samples per second
+            "throughput": Y_crop.shape[0] / duration # Samples per second
         })
 
     # Save to CSV
     df = pd.DataFrame(results)
-    df.to_csv(f"{output_dir}/ksvd_scaling_N{Y.shape[1]}.csv", index=False)
+    if weak:
+        df.to_csv(f"{output_dir}/ksvd_weak_scaling_N{Y.shape[1]}_synthetic.csv", index=False)
+    else:
+        df.to_csv(f"{output_dir}/ksvd_strong_scaling_N{Y.shape[1]}_synthetic.csv", index=False)
     return df
     
 # --- PLOTTING ---
@@ -124,18 +136,25 @@ def plot_results(df, mode="ksvd"):
     plt.savefig(f"benchmarks/{mode}_performance.png")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--data-path", type=str, required=True, help="Path to BSDS500 images")
-    parser.add_argument("--images", type=int, default=20)
-    args = parser.parse_args()
+    weak = True  # Set to False for strong scaling
 
-    # Load and Preprocess
-    print("Loading BSDS500 patches...")
-    patch_size = (7,7)
-    Y_data = load_bsds500(args.data_path, num_images=args.images, patch_size=patch_size)
+    # generate synthetic Y_data
 
-    print(Y_data.shape)
-    Y_data = Y_data.astype(np.float32).T  # Shape: (features, samples)
+    n_samples = 400000
+    n_features = 49
+    Y_data = np.random.normal(loc=5.0, scale=2.0, size=(n_samples, n_features)).astype(np.float32)
+    col_means = np.mean(Y_data, axis=0)
+    Y_data -= col_means
+    col_stds = np.std(Y_data, axis=0)
+    Y_data /= (col_stds + 1e-8)
+
+    # # Verification
+    # print(f"Shape: {Y_data.shape}")
+    # print(f"Mean of first 5 columns: {np.mean(Y_data, axis=0)[:5]}") # Should be ~0
+    # print(f"Std of first 5 columns: {np.std(Y_data, axis=0)[:5]}")   # Should be ~1
+    # print(Y_data.shape)
+
+    Y_data = Y_data.astype(np.float32)  # Shape: (features, samples)
     print(f"Dataset shape: {Y_data.shape} (Features x Samples)")
 
     # Benchmark config
@@ -143,6 +162,6 @@ if __name__ == "__main__":
     for i in range(numba.config.NUMBA_NUM_THREADS):
         if 2**i <= numba.config.NUMBA_NUM_THREADS:
             thread_counts.append(2**i)
-    benchmark_data = run_ksvd_benchmark(Y_data, T_0=32, k=256, num_iter=10, threads_list=thread_counts, batch_size=128)
+    benchmark_data = run_ksvd_benchmark(Y_data, T_0=32, k=256, num_iter=10, threads_list=thread_counts, batch_size=128, weak=weak)
 
     # generate_visuals(benchmark_data)
