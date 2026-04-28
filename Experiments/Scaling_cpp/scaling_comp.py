@@ -7,7 +7,7 @@ BINARY = os.path.join(os.path.dirname(__file__),
                       "../../Implementations/AK-SVD-Parallel/build/main")
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-M = 400000
+M = 10000
 THREADS = [1, 2, 4, 8, 16, 32, 64, 128]
 
 means = []
@@ -15,13 +15,10 @@ losses = []
 throughputs = []
 
 for p in THREADS:
-    env = os.environ.copy()
-    env["OMP_NUM_THREADS"] = str(p)
-
     out = subprocess.run(
-        [BINARY, "--synth", str(M)],
+        [BINARY, "--threads", str(p), "--synth", str(M)],
         capture_output=True, text=True,
-        env=env, cwd=os.path.dirname(BINARY)
+        cwd=os.path.dirname(BINARY)
     ).stdout
 
     # Parse runtime

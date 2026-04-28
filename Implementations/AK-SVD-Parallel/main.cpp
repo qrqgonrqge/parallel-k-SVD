@@ -4,6 +4,7 @@
 #include <vector>
 #include <numeric>
 #include <string>
+#include <memory>
 #include <Eigen/Dense>
 #include "image_process.hpp"
 #include "distorter.hpp"
@@ -15,15 +16,27 @@ int main(int argc, char* argv[]) {
     int K          = 256;
     int T0         = 32;
     int batch_size = 128;
-    int num_iter   = 10;
-    printf("Threads: %d\n", tbb::this_task_arena::max_concurrency());
+    int num_iter   = 2;
+
+    // --threads N must be the first argument if present
+    std::unique_ptr<tbb::global_control> tbb_ctrl;
+    int arg_start = 1;
+    if (argc >= 3 && std::string(argv[1]) == "--threads") {
+        int n_threads = std::stoi(argv[2]);
+        tbb_ctrl = std::make_unique<tbb::global_control>(
+            tbb::global_control::max_allowed_parallelism, n_threads);
+        arg_start = 3;
+    }
+
+    printf("Threads: %zu\n",
+           tbb::global_control::active_value(tbb::global_control::max_allowed_parallelism));
 
     Eigen::MatrixXf Y;
 
     // --synth M [N]  →  synthetic data
-    if (argc >= 3 && std::string(argv[1]) == "--synth") {
-        int M = std::stoi(argv[2]);
-        int N = (argc >= 4) ? std::stoi(argv[3]) : 49;
+    if (argc >= arg_start + 2 && std::string(argv[arg_start]) == "--synth") {
+        int M = std::stoi(argv[arg_start + 1]);
+        int N = (argc >= arg_start + 3) ? std::stoi(argv[arg_start + 2]) : 49;
         printf("Synthetic: M=%d  N=%d\n\n", M, N);
         Y = SynthData::generate(M, N);
     } else {

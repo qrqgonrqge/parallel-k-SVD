@@ -277,16 +277,6 @@ CMakeFiles/main.dir/distorter.cpp.o: /home/ray/github/parallel-k-SVD/Implementat
   /usr/include/eigen3/Eigen/src/Cholesky/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
   /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
   /usr/include/eigen3/Eigen/src/Core/Array.h \
   /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
@@ -322,6 +312,7 @@ CMakeFiles/main.dir/distorter.cpp.o: /home/ray/github/parallel-k-SVD/Implementat
   /usr/include/eigen3/Eigen/src/Core/IO.h \
   /usr/include/eigen3/Eigen/src/Core/IndexedView.h \
   /usr/include/eigen3/Eigen/src/Core/InnerProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/Inverse.h \
   /usr/include/eigen3/Eigen/src/Core/Map.h \
   /usr/include/eigen3/Eigen/src/Core/MapBase.h \
@@ -363,27 +354,23 @@ CMakeFiles/main.dir/distorter.cpp.o: /home/ray/github/parallel-k-SVD/Implementat
   /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
   /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
   /usr/include/eigen3/Eigen/src/Core/Visitor.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/Reductions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
@@ -397,7 +384,6 @@ CMakeFiles/main.dir/distorter.cpp.o: /home/ray/github/parallel-k-SVD/Implementat
   /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
   /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
   /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/util/Assert.h \
   /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
   /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
@@ -418,30 +404,24 @@ CMakeFiles/main.dir/distorter.cpp.o: /home/ray/github/parallel-k-SVD/Implementat
   /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
   /usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
   /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
-  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
   /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
   /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
   /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
   /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
   /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
   /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
@@ -451,35 +431,42 @@ CMakeFiles/main.dir/distorter.cpp.o: /home/ray/github/parallel-k-SVD/Implementat
   /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
   /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
   /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
-  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
-  /usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
   /usr/include/eigen3/Eigen/src/Householder/Householder.h \
   /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+  /usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Jacobi/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
-  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/Determinant.h \
   /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
   /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
-  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
-  /usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
   /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
   /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
   /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
-  /usr/include/eigen3/Eigen/src/SVD/InternalHeaderCheck.h \
+  /usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+  /usr/include/eigen3/Eigen/src/SVD/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
   /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
   /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
-  /usr/include/eigen3/Eigen/src/misc/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/misc/Image.h \
+  /usr/include/eigen3/Eigen/src/misc/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/misc/Kernel.h \
   /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
@@ -827,16 +814,6 @@ CMakeFiles/main.dir/image_process.cpp.o: /home/ray/github/parallel-k-SVD/Impleme
   /usr/include/eigen3/Eigen/src/Cholesky/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
   /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
   /usr/include/eigen3/Eigen/src/Core/Array.h \
   /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
@@ -872,6 +849,7 @@ CMakeFiles/main.dir/image_process.cpp.o: /home/ray/github/parallel-k-SVD/Impleme
   /usr/include/eigen3/Eigen/src/Core/IO.h \
   /usr/include/eigen3/Eigen/src/Core/IndexedView.h \
   /usr/include/eigen3/Eigen/src/Core/InnerProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/Inverse.h \
   /usr/include/eigen3/Eigen/src/Core/Map.h \
   /usr/include/eigen3/Eigen/src/Core/MapBase.h \
@@ -913,27 +891,23 @@ CMakeFiles/main.dir/image_process.cpp.o: /home/ray/github/parallel-k-SVD/Impleme
   /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
   /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
   /usr/include/eigen3/Eigen/src/Core/Visitor.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/Reductions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
@@ -947,7 +921,6 @@ CMakeFiles/main.dir/image_process.cpp.o: /home/ray/github/parallel-k-SVD/Impleme
   /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
   /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
   /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/util/Assert.h \
   /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
   /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
@@ -968,30 +941,24 @@ CMakeFiles/main.dir/image_process.cpp.o: /home/ray/github/parallel-k-SVD/Impleme
   /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
   /usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
   /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
-  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
   /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
   /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
   /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
   /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
   /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
   /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
@@ -1001,35 +968,42 @@ CMakeFiles/main.dir/image_process.cpp.o: /home/ray/github/parallel-k-SVD/Impleme
   /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
   /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
   /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
-  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
-  /usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
   /usr/include/eigen3/Eigen/src/Householder/Householder.h \
   /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+  /usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Jacobi/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
-  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/Determinant.h \
   /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
   /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
-  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
-  /usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
   /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
   /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
   /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
-  /usr/include/eigen3/Eigen/src/SVD/InternalHeaderCheck.h \
+  /usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+  /usr/include/eigen3/Eigen/src/SVD/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
   /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
   /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
-  /usr/include/eigen3/Eigen/src/misc/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/misc/Image.h \
+  /usr/include/eigen3/Eigen/src/misc/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/misc/Kernel.h \
   /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
@@ -1459,16 +1433,6 @@ CMakeFiles/main.dir/ksvd.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/
   /usr/include/eigen3/Eigen/src/Cholesky/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
   /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
   /usr/include/eigen3/Eigen/src/Core/Array.h \
   /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
@@ -1504,6 +1468,7 @@ CMakeFiles/main.dir/ksvd.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/
   /usr/include/eigen3/Eigen/src/Core/IO.h \
   /usr/include/eigen3/Eigen/src/Core/IndexedView.h \
   /usr/include/eigen3/Eigen/src/Core/InnerProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/Inverse.h \
   /usr/include/eigen3/Eigen/src/Core/Map.h \
   /usr/include/eigen3/Eigen/src/Core/MapBase.h \
@@ -1545,27 +1510,23 @@ CMakeFiles/main.dir/ksvd.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/
   /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
   /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
   /usr/include/eigen3/Eigen/src/Core/Visitor.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/Reductions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
@@ -1579,7 +1540,6 @@ CMakeFiles/main.dir/ksvd.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/
   /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
   /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
   /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/util/Assert.h \
   /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
   /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
@@ -1600,30 +1560,24 @@ CMakeFiles/main.dir/ksvd.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/
   /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
   /usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
   /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
-  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
   /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
   /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
   /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
   /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
   /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
   /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
@@ -1633,35 +1587,42 @@ CMakeFiles/main.dir/ksvd.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/
   /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
   /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
   /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
-  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
-  /usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
   /usr/include/eigen3/Eigen/src/Householder/Householder.h \
   /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+  /usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Jacobi/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
-  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/Determinant.h \
   /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
   /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
-  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
-  /usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
   /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
   /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
   /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
-  /usr/include/eigen3/Eigen/src/SVD/InternalHeaderCheck.h \
+  /usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+  /usr/include/eigen3/Eigen/src/SVD/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
   /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
   /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
-  /usr/include/eigen3/Eigen/src/misc/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/misc/Image.h \
+  /usr/include/eigen3/Eigen/src/misc/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/misc/Kernel.h \
   /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
@@ -1999,16 +1960,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/
   /usr/include/eigen3/Eigen/src/Cholesky/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
   /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
   /usr/include/eigen3/Eigen/src/Core/Array.h \
   /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
@@ -2044,6 +1995,7 @@ CMakeFiles/main.dir/main.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/
   /usr/include/eigen3/Eigen/src/Core/IO.h \
   /usr/include/eigen3/Eigen/src/Core/IndexedView.h \
   /usr/include/eigen3/Eigen/src/Core/InnerProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/Inverse.h \
   /usr/include/eigen3/Eigen/src/Core/Map.h \
   /usr/include/eigen3/Eigen/src/Core/MapBase.h \
@@ -2085,27 +2037,23 @@ CMakeFiles/main.dir/main.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/
   /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
   /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
   /usr/include/eigen3/Eigen/src/Core/Visitor.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/Reductions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
@@ -2119,7 +2067,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/
   /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
   /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
   /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/util/Assert.h \
   /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
   /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
@@ -2140,30 +2087,24 @@ CMakeFiles/main.dir/main.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/
   /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
   /usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
   /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
-  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
   /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
   /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
   /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
   /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
   /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
   /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
@@ -2173,35 +2114,42 @@ CMakeFiles/main.dir/main.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/
   /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
   /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
   /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
-  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
-  /usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
   /usr/include/eigen3/Eigen/src/Householder/Householder.h \
   /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+  /usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Jacobi/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
-  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/Determinant.h \
   /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
   /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
-  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
-  /usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
   /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
   /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
   /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
-  /usr/include/eigen3/Eigen/src/SVD/InternalHeaderCheck.h \
+  /usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+  /usr/include/eigen3/Eigen/src/SVD/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
   /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
   /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
-  /usr/include/eigen3/Eigen/src/misc/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/misc/Image.h \
+  /usr/include/eigen3/Eigen/src/misc/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/misc/Kernel.h \
   /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
@@ -2667,16 +2615,6 @@ CMakeFiles/main.dir/omp.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/A
   /usr/include/eigen3/Eigen/src/Cholesky/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
   /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
   /usr/include/eigen3/Eigen/src/Core/Array.h \
   /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
@@ -2712,6 +2650,7 @@ CMakeFiles/main.dir/omp.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/A
   /usr/include/eigen3/Eigen/src/Core/IO.h \
   /usr/include/eigen3/Eigen/src/Core/IndexedView.h \
   /usr/include/eigen3/Eigen/src/Core/InnerProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/Inverse.h \
   /usr/include/eigen3/Eigen/src/Core/Map.h \
   /usr/include/eigen3/Eigen/src/Core/MapBase.h \
@@ -2753,27 +2692,23 @@ CMakeFiles/main.dir/omp.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/A
   /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
   /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
   /usr/include/eigen3/Eigen/src/Core/Visitor.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/Reductions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
@@ -2787,7 +2722,6 @@ CMakeFiles/main.dir/omp.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/A
   /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
   /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
   /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/util/Assert.h \
   /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
   /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
@@ -2808,30 +2742,24 @@ CMakeFiles/main.dir/omp.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/A
   /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
   /usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
   /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
-  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
   /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
   /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
   /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
   /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
   /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
   /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
@@ -2841,35 +2769,42 @@ CMakeFiles/main.dir/omp.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/A
   /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
   /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
   /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
-  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
-  /usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
   /usr/include/eigen3/Eigen/src/Householder/Householder.h \
   /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+  /usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Jacobi/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
-  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/Determinant.h \
   /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
   /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
-  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
-  /usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
   /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
   /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
   /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
-  /usr/include/eigen3/Eigen/src/SVD/InternalHeaderCheck.h \
+  /usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+  /usr/include/eigen3/Eigen/src/SVD/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
   /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
   /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
-  /usr/include/eigen3/Eigen/src/misc/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/misc/Image.h \
+  /usr/include/eigen3/Eigen/src/misc/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/misc/Kernel.h \
   /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
@@ -3322,16 +3257,6 @@ CMakeFiles/main.dir/synth.cpp.o: /home/ray/github/parallel-k-SVD/Implementations
   /usr/include/eigen3/Eigen/src/Cholesky/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
   /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
-  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
   /usr/include/eigen3/Eigen/src/Core/Array.h \
   /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
@@ -3367,6 +3292,7 @@ CMakeFiles/main.dir/synth.cpp.o: /home/ray/github/parallel-k-SVD/Implementations
   /usr/include/eigen3/Eigen/src/Core/IO.h \
   /usr/include/eigen3/Eigen/src/Core/IndexedView.h \
   /usr/include/eigen3/Eigen/src/Core/InnerProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/Inverse.h \
   /usr/include/eigen3/Eigen/src/Core/Map.h \
   /usr/include/eigen3/Eigen/src/Core/MapBase.h \
@@ -3408,27 +3334,23 @@ CMakeFiles/main.dir/synth.cpp.o: /home/ray/github/parallel-k-SVD/Implementations
   /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
   /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
   /usr/include/eigen3/Eigen/src/Core/Visitor.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
   /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/Reductions.h \
   /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
   /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
   /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
@@ -3442,7 +3364,6 @@ CMakeFiles/main.dir/synth.cpp.o: /home/ray/github/parallel-k-SVD/Implementations
   /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
   /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
   /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
-  /usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Core/util/Assert.h \
   /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
   /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
@@ -3463,30 +3384,24 @@ CMakeFiles/main.dir/synth.cpp.o: /home/ray/github/parallel-k-SVD/Implementations
   /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
   /usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
   /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
-  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
   /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
   /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
   /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
   /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
   /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
   /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
@@ -3496,35 +3411,42 @@ CMakeFiles/main.dir/synth.cpp.o: /home/ray/github/parallel-k-SVD/Implementations
   /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
   /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
   /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
-  /usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
-  /usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
   /usr/include/eigen3/Eigen/src/Householder/Householder.h \
   /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+  /usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Jacobi/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
-  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/Determinant.h \
   /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
   /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
-  /usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
-  /usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
   /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
   /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
   /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
-  /usr/include/eigen3/Eigen/src/SVD/InternalHeaderCheck.h \
+  /usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+  /usr/include/eigen3/Eigen/src/SVD/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
   /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
   /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
-  /usr/include/eigen3/Eigen/src/misc/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/misc/Image.h \
+  /usr/include/eigen3/Eigen/src/misc/InternalHeaderCheck.h \
   /usr/include/eigen3/Eigen/src/misc/Kernel.h \
   /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
@@ -4415,13 +4337,13 @@ CMakeFiles/main.dir/synth.cpp.o:
 
 /usr/include/c++/15.2.1/bits/stl_algobase.h:
 
-/usr/include/c++/15.2.1/mutex:
-
-/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc:
-
 /usr/include/opencv4/opencv2/core/base.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/Scaling.h:
+
+/usr/include/c++/15.2.1/mutex:
+
+/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.inc:
 
 /usr/include/c++/15.2.1/cstdlib:
 
@@ -4983,30 +4905,6 @@ CMakeFiles/main.dir/synth.cpp.o:
 
 /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h:
 
-/usr/include/opencv4/opencv2/ml.hpp:
-
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc:
-
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc:
-
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc:
-
-/usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxavx512intrin.h:
-
-/usr/include/oneapi/tbb/detail/_exception.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
-
-/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc:
-
-/usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc:
-
-/usr/lib32/libgfortran.so.5:
-
-/usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h:
-
 /usr/include/eigen3/Eigen/src/Core/Array.h:
 
 /usr/include/eigen3/Eigen/src/Core/ArrayBase.h:
@@ -5080,6 +4978,10 @@ CMakeFiles/main.dir/synth.cpp.o:
 /usr/include/c++/15.2.1/bits/stl_queue.h:
 
 /usr/include/c++/15.2.1/bits/stl_set.h:
+
+/usr/lib32/libgfortran.so.5:
+
+/usr/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h:
 
 /usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
 
@@ -5221,8 +5123,6 @@ CMakeFiles/main.dir/synth.cpp.o:
 
 /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:
 
-/usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vp2intersectvlintrin.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
@@ -5233,9 +5133,9 @@ CMakeFiles/main.dir/synth.cpp.o:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
 
-/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
+/usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
 
-/usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h:
+/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
 
 /usr/include/bits/stdint-intn.h:
 
@@ -5254,6 +5154,8 @@ CMakeFiles/main.dir/synth.cpp.o:
 /usr/include/c++/15.2.1/chrono:
 
 /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/InternalHeaderCheck.h:
 
 /usr/include/asm/errno.h:
 
@@ -5277,23 +5179,23 @@ CMakeFiles/main.dir/synth.cpp.o:
 
 /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
 
-/usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/immintrin.h:
 
 /usr/include/eigen3/Eigen/src/Householder/Householder.h:
+
+/usr/include/eigen3/Eigen/src/Householder/InternalHeaderCheck.h:
 
 /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
 
 /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
 
-/usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h:
-
-/usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h:
-
 /usr/include/eigen3/Eigen/src/LU/Determinant.h:
 
 /usr/include/c++/15.2.1/bits/deque.tcc:
+
+/usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h:
+
+/usr/include/eigen3/Eigen/src/LU/InternalHeaderCheck.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/fmaintrin.h:
 
@@ -5307,10 +5209,6 @@ CMakeFiles/main.dir/synth.cpp.o:
 
 /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
 
-/usr/include/c++/15.2.1/bits/stl_iterator_base_types.h:
-
-/usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h:
-
 /usr/lib/libwebp.so.7:
 
 /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
@@ -5320,6 +5218,10 @@ CMakeFiles/main.dir/synth.cpp.o:
 /usr/include/eigen3/Eigen/src/Core/Stride.h:
 
 /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
+
+/usr/include/c++/15.2.1/bits/stl_iterator_base_types.h:
+
+/usr/include/eigen3/Eigen/src/QR/InternalHeaderCheck.h:
 
 /usr/include/c++/15.2.1/cerrno:
 
@@ -5336,6 +5238,26 @@ CMakeFiles/main.dir/synth.cpp.o:
 /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
 
 /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
+
+/usr/include/opencv4/opencv2/ml.hpp:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.inc:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.inc:
+
+/usr/include/eigen3/Eigen/src/plugins/BlockMethods.inc:
+
+/usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.inc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxavx512intrin.h:
+
+/usr/include/oneapi/tbb/detail/_exception.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
+
+/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.inc:
+
+/usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.inc:
 
 /usr/include/gnu/stubs-64.h:
 
