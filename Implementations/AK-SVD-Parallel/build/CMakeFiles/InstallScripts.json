@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home1/09753/rzj77/parallel-k-SVD/Implementations/AK-SVD-Parallel/build/cmake_install.cmake"
+		"/home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Parallel/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

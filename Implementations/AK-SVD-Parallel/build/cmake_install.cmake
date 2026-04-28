@@ -1,4 +1,4 @@
-# Install script for directory: /home1/09753/rzj77/parallel-k-SVD/Implementations/AK-SVD-Parallel
+# Install script for directory: /home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Parallel
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -39,13 +39,13 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/opt/apps/gcc/11.2.0/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home1/09753/rzj77/parallel-k-SVD/Implementations/AK-SVD-Parallel/build/install_local_manifest.txt"
+  file(WRITE "/home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Parallel/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home1/09753/rzj77/parallel-k-SVD/Implementations/AK-SVD-Parallel/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Parallel/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

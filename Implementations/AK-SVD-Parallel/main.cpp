@@ -9,13 +9,14 @@
 #include "distorter.hpp"
 #include "ksvd.hpp"
 #include "synth.hpp"
-#include <omp.h>
+#include <tbb/global_control.h>
+#include <tbb/task_arena.h>
 int main(int argc, char* argv[]) {
     int K          = 256;
     int T0         = 32;
     int batch_size = 128;
     int num_iter   = 10;
-    printf("Threads: %d\n", omp_get_max_threads());
+    printf("Threads: %d\n", tbb::this_task_arena::max_concurrency());
 
     Eigen::MatrixXf Y;
 

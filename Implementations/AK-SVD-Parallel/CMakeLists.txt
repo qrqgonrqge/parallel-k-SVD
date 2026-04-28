@@ -5,7 +5,11 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(OpenCV REQUIRED COMPONENTS core imgproc imgcodecs)
-find_package(OpenMP REQUIRED)
+find_package(TBB REQUIRED)
+find_package(Eigen3 QUIET)
+if(NOT Eigen3_FOUND)
+    set(EIGEN3_INCLUDE_DIR "/usr/include/eigen3" CACHE PATH "Eigen3 include dir")
+endif()
 
 add_executable(main
     main.cpp
@@ -18,12 +22,15 @@ add_executable(main
 
 target_link_libraries(main PRIVATE
     ${OpenCV_LIBS}
-    OpenMP::OpenMP_CXX
+    TBB::tbb
 )
 
 target_include_directories(main PRIVATE
     ${OpenCV_INCLUDE_DIRS}
-    ${EIGEN3_INCLUDE_DIR}
+    $<IF:$<TARGET_EXISTS:Eigen3::Eigen>,,${EIGEN3_INCLUDE_DIR}>
 )
+if(TARGET Eigen3::Eigen)
+    target_link_libraries(main PRIVATE Eigen3::Eigen)
+endif()
 
 target_compile_options(main PRIVATE -O3 -DNDEBUG)

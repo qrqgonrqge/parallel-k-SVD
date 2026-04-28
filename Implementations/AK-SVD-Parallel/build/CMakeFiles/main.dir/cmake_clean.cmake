@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/link.d"
   "CMakeFiles/main.dir/distorter.cpp.o"
   "CMakeFiles/main.dir/distorter.cpp.o.d"
   "CMakeFiles/main.dir/image_process.cpp.o"

@@ -1,6 +1,7 @@
 #include "omp.hpp"
 #include <cstdio>
-#include <omp.h>
+#include <tbb/parallel_for.h>
+#include <tbb/blocked_range.h>
 
 OMP::OMP(int N, int K, int T0, Eigen::MatrixXf Y, int batch_size) {
     this->params.N          = N;
@@ -23,8 +24,9 @@ bool OMP::do_omp() {
     Eigen::VectorXf D_norm(K);
     for (int k = 0; k < K; k++) D_norm(k) = this->D.col(k).norm();
 
-    #pragma omp parallel for schedule(dynamic)
-    for (int b_start = 0; b_start < M; b_start += bs) {
+    const int num_batches = (M + bs - 1) / bs;
+    tbb::parallel_for(0, num_batches, [&](int b) {
+        const int b_start = b * bs;
         const int cur = std::min(bs, M - b_start);
 
         // y_batch stays fixed; r_batch is the evolving residual
@@ -127,7 +129,7 @@ bool OMP::do_omp() {
             for (int j = 0; j < js; j++)
                 X(b_start + i, I_batch(i, j)) = gamma(j);
         }
-    }
+    });
 
     this->X = X;
     return true;
