@@ -11,10 +11,10 @@
 #include "synth.hpp"
 #include <omp.h>
 int main(int argc, char* argv[]) {
-    int K          = 300;
-    int T0         = 20;
-    int batch_size = 256;
-    int num_iter   = 2;
+    int K          = 256;
+    int T0         = 32;
+    int batch_size = 128;
+    int num_iter   = 10;
     printf("Threads: %d\n", omp_get_max_threads());
 
     Eigen::MatrixXf Y;
@@ -39,7 +39,7 @@ int main(int argc, char* argv[]) {
     }
 
     // ---- Hyperparams ----
-    const int n_runs     = 10;
+    const int n_runs     = 1;
 
     printf("K-SVD  K=%d  T0=%d  num_iter=%d  batch_size=%d  n_runs=%d\n\n",
            K, T0, num_iter, batch_size, n_runs);

@@ -1,27 +1,29 @@
-cmake_minimum_required(VERSION 3.10)
-project(aksvd_parallel)
+cmake_minimum_required(VERSION 3.16)
+project(aksvd_parallel LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Eigen3 REQUIRED)
 find_package(OpenCV REQUIRED COMPONENTS core imgproc imgcodecs)
 find_package(OpenMP REQUIRED)
 
 add_executable(main
     main.cpp
-    omp.cpp        omp.hpp
-    ksvd.cpp       ksvd.hpp
-    distorter.cpp  distorter.hpp
-    image_process.cpp image_process.hpp
-    synth.cpp      synth.hpp
+    omp.cpp
+    ksvd.cpp
+    distorter.cpp
+    image_process.cpp
+    synth.cpp
 )
 
-target_link_libraries(main Eigen3::Eigen)
-target_link_libraries(main ${OpenCV_LIBS})
-target_link_libraries(main OpenMP::OpenMP_CXX)
+target_link_libraries(main PRIVATE
+    ${OpenCV_LIBS}
+    OpenMP::OpenMP_CXX
+)
 
-target_include_directories(main PRIVATE ${EIGEN3_INCLUDE_DIR})
-target_include_directories(main PRIVATE ${OpenCV_INCLUDE_DIRS})
+target_include_directories(main PRIVATE
+    ${OpenCV_INCLUDE_DIRS}
+    ${EIGEN3_INCLUDE_DIR}
+)
 
-target_compile_options(main PRIVATE -O3 -march=native -DNDEBUG)
+target_compile_options(main PRIVATE -O3 -DNDEBUG)
