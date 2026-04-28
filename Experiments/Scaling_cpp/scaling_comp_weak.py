@@ -17,13 +17,11 @@ losses = []
 throughputs = []
 
 for idx,p in enumerate(THREADS):
-    env = os.environ.copy()
-    env["OMP_NUM_THREADS"] = str(p)
-
+    
     out = subprocess.run(
-        [BINARY, "--synth", str(weak_scaling_range[idx])],
+        [BINARY, "--threads", str(p), "--synth", str(weak_scaling_range[idx])],
         capture_output=True, text=True,
-        env=env, cwd=os.path.dirname(BINARY)
+        cwd=os.path.dirname(BINARY)
     ).stdout
 
     # Parse runtime
@@ -43,7 +41,7 @@ for idx,p in enumerate(THREADS):
     print(f"P={p:3d}  mean={mean:.4f}s  throughput={throughput:.4f}")
 
 # ---- Save CSV ----
-csv_path = os.path.join(HERE, "ksvd_scaling_strong.csv")
+csv_path = os.path.join(HERE, "ksvd_scaling_weak.csv")
 
 with open(csv_path, "w", newline="") as f:
     writer = csv.writer(f)

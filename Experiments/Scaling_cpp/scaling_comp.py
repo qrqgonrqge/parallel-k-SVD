@@ -7,7 +7,7 @@ BINARY = os.path.join(os.path.dirname(__file__),
                       "../../Implementations/AK-SVD-Parallel/build/main")
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-M = 10000
+M = 400000
 THREADS = [1, 2, 4, 8, 16, 32, 64, 128]
 
 means = []
