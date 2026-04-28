@@ -1,0 +1,22 @@
+# Upgrade pip
+
+# Install scientific computing packages
+numpy
+scipy
+matplotlib
+scikit-learn
+torch
+
+numba
+
+# Install profiling tools
+snakeviz
+line_profiler
+memory_profiler
+viztracer
+
+#
+pandas
+seaborn
+scikit-image
+argparse
