@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ray/github/parallel-k-SVD/Implementations/AK-SVD-Serial/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

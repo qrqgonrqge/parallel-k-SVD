@@ -18,3 +18,11 @@ Experiments/Benchmarking/*.csv
 
 # Scalability csv files
 Experiments/Scalability Analysis/**/*.csv
+
+# c++ caches
+**/.cache/
+*.d
+*.o
+*.d.o
+Implementations/AK-SVD-Parallel/build/vgcore.181157
+build/

@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+distorter.o: distorter.cpp.o
+.PHONY : distorter.o
+
+# target to build an object file
+distorter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/distorter.cpp.o
+.PHONY : distorter.cpp.o
+
+distorter.i: distorter.cpp.i
+.PHONY : distorter.i
+
+# target to preprocess a source file
+distorter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/distorter.cpp.i
+.PHONY : distorter.cpp.i
+
+distorter.s: distorter.cpp.s
+.PHONY : distorter.s
+
+# target to generate assembly for a file
+distorter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/distorter.cpp.s
+.PHONY : distorter.cpp.s
+
 image_process.o: image_process.cpp.o
 .PHONY : image_process.o
 
@@ -152,6 +176,30 @@ image_process.s: image_process.cpp.s
 image_process.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/image_process.cpp.s
 .PHONY : image_process.cpp.s
+
+ksvd.o: ksvd.cpp.o
+.PHONY : ksvd.o
+
+# target to build an object file
+ksvd.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ksvd.cpp.o
+.PHONY : ksvd.cpp.o
+
+ksvd.i: ksvd.cpp.i
+.PHONY : ksvd.i
+
+# target to preprocess a source file
+ksvd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ksvd.cpp.i
+.PHONY : ksvd.cpp.i
+
+ksvd.s: ksvd.cpp.s
+.PHONY : ksvd.s
+
+# target to generate assembly for a file
+ksvd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ksvd.cpp.s
+.PHONY : ksvd.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -210,9 +258,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... distorter.o"
+	@echo "... distorter.i"
+	@echo "... distorter.s"
 	@echo "... image_process.o"
 	@echo "... image_process.i"
 	@echo "... image_process.s"
+	@echo "... ksvd.o"
+	@echo "... ksvd.i"
+	@echo "... ksvd.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

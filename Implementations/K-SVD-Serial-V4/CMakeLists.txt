@@ -12,7 +12,13 @@ find_package(Eigen3 REQUIRED)
 find_package(OpenCV REQUIRED COMPONENTS core imgproc imgcodecs)
 
 # Create executable
-add_executable(main main.cpp omp.cpp omp.hpp image_process.cpp image_process.hpp)
+add_executable(main
+    main.cpp
+    omp.cpp        omp.hpp
+    ksvd.cpp       ksvd.hpp
+    distorter.cpp  distorter.hpp
+    image_process.cpp image_process.hpp
+)
 
 # Link Eigen3
 target_link_libraries(main Eigen3::Eigen)
@@ -23,3 +29,5 @@ target_link_libraries(main ${OpenCV_LIBS})
 # Include directories
 target_include_directories(main PRIVATE ${EIGEN3_INCLUDE_DIR})
 target_include_directories(main PRIVATE ${OpenCV_INCLUDE_DIRS})
+
+target_compile_options(main PRIVATE -O3 -march=native -DNDEBUG)

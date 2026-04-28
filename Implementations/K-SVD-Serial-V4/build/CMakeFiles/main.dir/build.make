@@ -100,10 +100,38 @@ CMakeFiles/main.dir/omp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/omp.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/omp.cpp -o CMakeFiles/main.dir/omp.cpp.s
 
+CMakeFiles/main.dir/ksvd.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/ksvd.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/ksvd.cpp
+CMakeFiles/main.dir/ksvd.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/ksvd.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/ksvd.cpp.o -MF CMakeFiles/main.dir/ksvd.cpp.o.d -o CMakeFiles/main.dir/ksvd.cpp.o -c /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/ksvd.cpp
+
+CMakeFiles/main.dir/ksvd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/ksvd.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/ksvd.cpp > CMakeFiles/main.dir/ksvd.cpp.i
+
+CMakeFiles/main.dir/ksvd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/ksvd.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/ksvd.cpp -o CMakeFiles/main.dir/ksvd.cpp.s
+
+CMakeFiles/main.dir/distorter.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/distorter.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/distorter.cpp
+CMakeFiles/main.dir/distorter.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/distorter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/distorter.cpp.o -MF CMakeFiles/main.dir/distorter.cpp.o.d -o CMakeFiles/main.dir/distorter.cpp.o -c /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/distorter.cpp
+
+CMakeFiles/main.dir/distorter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/distorter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/distorter.cpp > CMakeFiles/main.dir/distorter.cpp.i
+
+CMakeFiles/main.dir/distorter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/distorter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/distorter.cpp -o CMakeFiles/main.dir/distorter.cpp.s
+
 CMakeFiles/main.dir/image_process.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/image_process.cpp.o: /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/image_process.cpp
 CMakeFiles/main.dir/image_process.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/image_process.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/image_process.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/image_process.cpp.o -MF CMakeFiles/main.dir/image_process.cpp.o.d -o CMakeFiles/main.dir/image_process.cpp.o -c /home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/image_process.cpp
 
 CMakeFiles/main.dir/image_process.cpp.i: cmake_force
@@ -118,6 +146,8 @@ CMakeFiles/main.dir/image_process.cpp.s: cmake_force
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
 "CMakeFiles/main.dir/omp.cpp.o" \
+"CMakeFiles/main.dir/ksvd.cpp.o" \
+"CMakeFiles/main.dir/distorter.cpp.o" \
 "CMakeFiles/main.dir/image_process.cpp.o"
 
 # External object files for target main
@@ -125,6 +155,8 @@ main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/main.cpp.o
 main: CMakeFiles/main.dir/omp.cpp.o
+main: CMakeFiles/main.dir/ksvd.cpp.o
+main: CMakeFiles/main.dir/distorter.cpp.o
 main: CMakeFiles/main.dir/image_process.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/compiler_depend.ts
@@ -132,7 +164,7 @@ main: /usr/lib/libopencv_imgcodecs.so.4.13.0
 main: /usr/lib/libopencv_imgproc.so.4.13.0
 main: /usr/lib/libopencv_core.so.4.13.0
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ray/github/parallel-k-SVD/Implementations/K-SVD-Serial-V4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
