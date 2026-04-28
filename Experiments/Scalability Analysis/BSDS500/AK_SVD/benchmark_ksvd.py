@@ -57,6 +57,7 @@ def run_ksvd_benchmark(Y, T_0, k, num_iter, threads_list, batch_size=1):
         duration = end_time - start_time
         
         # Final Reconstruction Loss
+        print(D_out.shape, X_out.shape)
         reconstruction = X_out @ D_out  # Shape: (n_samples, n_features)
         final_loss = np.sqrt(np.mean((Y - reconstruction)**2))
         
@@ -130,8 +131,11 @@ if __name__ == "__main__":
 
     # Load and Preprocess
     print("Loading BSDS500 patches...")
-    patch_size = (8, 8)
+    patch_size = (7,7)
     Y_data = load_bsds500(args.data_path, num_images=args.images, patch_size=patch_size)
+
+    print(Y_data.shape)
+    Y_data = Y_data.astype(np.float32).T  # Shape: (features, samples)
     print(f"Dataset shape: {Y_data.shape} (Features x Samples)")
 
     # Benchmark config
@@ -139,6 +143,6 @@ if __name__ == "__main__":
     for i in range(numba.config.NUMBA_NUM_THREADS):
         if 2**i <= numba.config.NUMBA_NUM_THREADS:
             thread_counts.append(2**i)
-    benchmark_data = run_ksvd_benchmark(Y_data, T_0=32, k=256, num_iter=100, threads_list=thread_counts)
+    benchmark_data = run_ksvd_benchmark(Y_data, T_0=32, k=256, num_iter=10, threads_list=thread_counts, batch_size=128)
 
     # generate_visuals(benchmark_data)

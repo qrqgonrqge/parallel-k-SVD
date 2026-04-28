@@ -596,10 +596,11 @@ def OMP(Y, T_0, D, batch_size = 1, rng=42, debug=False, float_dtype=np.float32):
     res = Y.copy()
     
     # for i, y in enumerate(Y_batches):
+    debug_step = len(splits) // 50
     for i in prange(len(splits)):
         split = splits[i]
         
-        if True:
+        if i % debug_step == 0 and True:
             print(f'Processing batch {i}/{len(splits)}')
 
         start_idx = split
