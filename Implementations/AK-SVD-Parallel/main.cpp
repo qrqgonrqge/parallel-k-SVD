@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
     int K          = 256;
     int T0         = 32;
     int batch_size = 128;
-    int num_iter   = 2;
+    int num_iter   = 10;
 
     // --threads N must be the first argument if present
     std::unique_ptr<tbb::global_control> tbb_ctrl;
