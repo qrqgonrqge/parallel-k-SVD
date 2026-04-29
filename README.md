@@ -30,7 +30,7 @@ comparison_folder/   Benchmark scripts (synthetic & image data)
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/<your-org>/parallel-k-SVD.git
+git clone https://github.com/qrqgonrqge/parallel-k-SVD.git
 cd parallel-k-SVD
 
 # 2. (Recommended) create a virtual environment
@@ -50,7 +50,6 @@ The `requirements.txt` installs:
 | `scikit-learn` | OMP (`orthogonal_mp_gram`) |
 | `numba` | JIT compilation / parallelism |
 | `matplotlib` | Plotting |
-| `torch` | (optional) GPU experiments |
 | `pandas`, `seaborn` | Benchmark result tables / plots |
 
 ### Running a benchmark
@@ -76,20 +75,7 @@ sudo apt update
 sudo apt install cmake build-essential libeigen3-dev libopencv-dev libtbb-dev
 ```
 
-**Arch Linux**
-```bash
-sudo pacman -S cmake eigen opencv tbb
-```
 
-**macOS (Homebrew)**
-```bash
-brew install cmake eigen opencv tbb
-```
-
-OpenMP is provided by the compiler on Linux (`g++`) and must be installed separately on macOS:
-```bash
-brew install libomp
-```
 
 ### Building each C++ implementation
 
